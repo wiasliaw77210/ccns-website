@@ -1,5 +1,8 @@
 import React from 'react';
+import Header from './Header';
 
-export default (() => {
-  return <div>Hello</div>;
-}) as React.FC;
+export default (() => (
+  <div>
+    <Header />
+  </div>
+)) as React.FC;

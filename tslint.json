@@ -2,6 +2,7 @@
   "extends": "tslint-config-airbnb-base",
   "rules": {
     "variable-name": false,
-    "ter-arrow-body-style": false
+    "ter-arrow-body-style": false,
+    "quotemark": false
   }
 }

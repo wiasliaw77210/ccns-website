@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TopDiv = styled.div`
+const Container = styled.div`
   padding: 0 10% 0 10%;
   background-image: linear-gradient(to left, #e3e3e3, #303030);
   position: relative;
@@ -16,7 +16,7 @@ const TopDiv = styled.div`
   }
 `;
 
-const TitleWrapper = styled.div`
+const Wrapper = styled.div`
   width: inherit;
   position: absolute;
   bottom: 22px;
@@ -40,7 +40,7 @@ const TitleSquare = styled.div<{ css: React.CSSProperties }>`
   }
 `;
 
-const TitleText = styled.div`
+const TitleFlexBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -57,8 +57,8 @@ const Text = styled.p`
 
 export default (() => {
   return (
-    <TopDiv>
-      <TitleWrapper>
+    <Container>
+      <Wrapper>
         <TitleSquare
           css={{
             width: '128px',
@@ -67,13 +67,13 @@ export default (() => {
             backgroundColor: '#fff',
           }}
         />
-        <TitleText>
+        <TitleFlexBox>
           <Text>CCNS 成大電腦網路愛好社</Text>
           <Text>
             Software Engineers, Developers, Hackers, Adventurers ... @NCKU
           </Text>
-        </TitleText>
-      </TitleWrapper>
-    </TopDiv>
+        </TitleFlexBox>
+      </Wrapper>
+    </Container>
   );
 }) as React.FC;

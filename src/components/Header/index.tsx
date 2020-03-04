@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from './Title';
-import GridSquare from './GridSquare';
+import SquareList from './SquareList';
 
 const Header = styled.header`
   width: 100vw;
-  height: 100vh;
   min-width: 300px;
 `;
 
 export default (() => (
   <Header>
     <Title />
-    <GridSquare />
+    <SquareList />
   </Header>
 )) as React.FC;

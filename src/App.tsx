@@ -1,8 +1,4 @@
 import React from 'react';
-import Header from './Header';
+import IndexPage from './pages/index';
 
-export default (() => (
-  <div>
-    <Header />
-  </div>
-)) as React.FC;
+export default (() => <IndexPage />) as React.FC;
